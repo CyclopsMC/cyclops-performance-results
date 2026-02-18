@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771404918105,
+  "lastUpdate": 1771406230696,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -28,6 +28,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "emptynetwork_size_25",
             "value": 0.95,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "f9928c04e8b4509dffbb71d7fb06fcd2e8bba571",
+          "message": "Run performance tests in CI",
+          "timestamp": "2026-02-18T10:13:40+01:00",
+          "tree_id": "e47609360a023eec6346672ec3f72f6a1d04c921",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/f9928c04e8b4509dffbb71d7fb06fcd2e8bba571"
+        },
+        "date": 1771406230295,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "emptynetwork_size_25",
+            "value": 1.12,
             "unit": "ms"
           }
         ]
