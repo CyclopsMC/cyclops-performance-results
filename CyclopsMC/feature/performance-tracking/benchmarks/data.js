@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771416383100,
+  "lastUpdate": 1771419117299,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -353,6 +353,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "empty_size_25",
             "value": 1.62,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "d1f14115a57574edc882a683ad7b67c91be1522a",
+          "message": "Add redstone io clocks performance test with variables",
+          "timestamp": "2026-02-18T13:48:02+01:00",
+          "tree_id": "a65ad1a8a2ee32bcba04ce2b71a40d7fc7f9de14",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/d1f14115a57574edc882a683ad7b67c91be1522a"
+        },
+        "date": 1771419117054,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "redstoneioclock_size_25",
+            "value": 7.43,
+            "unit": "ms"
+          },
+          {
+            "name": "redstoneioclock_choice_size_25",
+            "value": 1.19,
+            "unit": "ms"
+          },
+          {
+            "name": "idle_size_25",
+            "value": 37.51,
+            "unit": "ms"
+          },
+          {
+            "name": "empty_size_25",
+            "value": 0,
             "unit": "ms"
           }
         ]
