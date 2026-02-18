@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771431820059,
+  "lastUpdate": 1771434896491,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -441,6 +441,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "empty_size_10",
             "value": 0.39,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "7660c78d633a6f3f6839428ed8de49e50ba4ba89",
+          "message": "Fix performance tests not being measured correctly",
+          "timestamp": "2026-02-18T18:12:13+01:00",
+          "tree_id": "0a0fb541280ab72dee708b02c78579f84760e202",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/7660c78d633a6f3f6839428ed8de49e50ba4ba89"
+        },
+        "date": 1771434896205,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "redstoneioclock_size_10",
+            "value": 1.26,
+            "unit": "ms"
+          },
+          {
+            "name": "redstoneioclock_choice_size_10",
+            "value": 0.85,
+            "unit": "ms"
+          },
+          {
+            "name": "idle_size_10",
+            "value": 0.92,
+            "unit": "ms"
+          },
+          {
+            "name": "empty_size_10",
+            "value": 0.4,
             "unit": "ms"
           }
         ]
