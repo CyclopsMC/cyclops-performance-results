@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771434896491,
+  "lastUpdate": 1771493025828,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -484,6 +484,90 @@ window.BENCHMARK_DATA = {
           },
           {
             "name": "empty_size_10",
+            "value": 0.4,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "99ac424e6098172992d48d948f005c5a3f0e9d81",
+          "message": "WIP",
+          "timestamp": "2026-02-19T10:16:13+01:00",
+          "tree_id": "b6146f8994c5e4451d98f7ff3fe25f6f08bfef6b",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/99ac424e6098172992d48d948f005c5a3f0e9d81"
+        },
+        "date": 1771493025652,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "redstoneioclock_size_10_network_tick_time",
+            "value": 1.62,
+            "unit": "ms"
+          },
+          {
+            "name": "redstoneioclock_size_10_server_tick_time",
+            "value": 0.52,
+            "unit": "ms"
+          },
+          {
+            "name": "idle_append_size_10_network_tick_time",
+            "value": 1.21,
+            "unit": "ms"
+          },
+          {
+            "name": "idle_append_size_10_server_tick_time",
+            "value": 0.38,
+            "unit": "ms"
+          },
+          {
+            "name": "redstoneioclock_choice_size_10_network_tick_time",
+            "value": 0.75,
+            "unit": "ms"
+          },
+          {
+            "name": "redstoneioclock_choice_size_10_server_tick_time",
+            "value": 0.37,
+            "unit": "ms"
+          },
+          {
+            "name": "empty_append_size_10_network_tick_time",
+            "value": 0.22,
+            "unit": "ms"
+          },
+          {
+            "name": "empty_append_size_10_server_tick_time",
+            "value": 0.41,
+            "unit": "ms"
+          },
+          {
+            "name": "idle_size_10_network_tick_time",
+            "value": 1.19,
+            "unit": "ms"
+          },
+          {
+            "name": "idle_size_10_server_tick_time",
+            "value": 0.44,
+            "unit": "ms"
+          },
+          {
+            "name": "empty_size_10_network_tick_time",
+            "value": 0.62,
+            "unit": "ms"
+          },
+          {
+            "name": "empty_size_10_server_tick_time",
             "value": 0.4,
             "unit": "ms"
           }
