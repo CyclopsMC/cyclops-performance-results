@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771762336453,
+  "lastUpdate": 1771765269509,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -495,6 +495,130 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: empty_size_10",
             "value": 0.28,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "198982749+Copilot@users.noreply.github.com",
+            "name": "Copilot",
+            "username": "Copilot"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "553fce7829f66ddb9405121803f3ddfcdf4edc0c",
+          "message": "Add nightly fuzzing CI for random network crash detection (#1607)\n\n* Initial plan\n\n* Add fuzzing game test and nightly fuzzing workflow\n\nCo-authored-by: rubensworks <440384+rubensworks@users.noreply.github.com>\n\n* Run workflow every hour\n\n* Use actual placement logic in fuzzing tests\n\n* Use registries to determine fuzzing elements\n\n* Use proper generics in NetworkFuzzer\n\n* Improve reader context fuzzing randomness\n\n* Throw exceptions instead of logging during fuzzing errors\n\n* Report issue on fuzzing failures\n\n* Mention fuzzing logs within created issue\n\n* Fix fuzzing using incorrect variable IDs\n\n* Place fuzzing context blocks for writers\n\n* Place multiple variable stores during fuzzing if needed\n\n* Lower chance of TARGETENTITY operator during fuzzing\n\n* Fix parts overwriting other parts during fuzzing\n\n* Fix value type category handling during fuzzing\n\n* Place at least one part during fuzzing\n\n* Don't throw fuzzing exception when no more space for writers\n\n* Also fuzz random constant values\n\n* Fallback to fuzzing random values if operator chain is empty\n\n* Improve variability of fluid and machine reader fuzzing contexts\n\n* Save fuzzing structure even on exceptions\n\n* Add deterministic seed to fuzzer\n\n* Run 1000 fuzzing iterations every night in CI\n\n* Also save entities within fuzzing structure files\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: rubensworks <440384+rubensworks@users.noreply.github.com>\nCo-authored-by: Ruben Taelman <rubensworks@gmail.com>",
+          "timestamp": "2026-02-22T13:51:15+01:00",
+          "tree_id": "cda7c2439bcab60b773c3dc6d57599e87a58c3f9",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/553fce7829f66ddb9405121803f3ddfcdf4edc0c"
+        },
+        "date": 1771765269028,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: redstoneioclock_size_10",
+            "value": 1.32,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_size_10",
+            "value": 0.33,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_appendparts_size_10",
+            "value": 0.12,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_appendparts_size_10",
+            "value": 22.21,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_append_size_10",
+            "value": 0.41,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_append_size_10",
+            "value": 20.47,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_remove_size_10",
+            "value": 0.01,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_remove_size_10",
+            "value": 14.65,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_choice_size_10",
+            "value": 0.77,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_choice_size_10",
+            "value": 0.51,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_append_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_append_size_10",
+            "value": 5.74,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_appendparts_size_10",
+            "value": 0.56,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_appendparts_size_10",
+            "value": 11.92,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: idle_size_10",
+            "value": 0.8,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: idle_size_10",
+            "value": 0.29,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_remove_size_10",
+            "value": 0.36,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_remove_size_10",
+            "value": 45.14,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_size_10",
+            "value": 0.01,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_size_10",
+            "value": 0.51,
             "unit": "tick time (ms)"
           }
         ]
