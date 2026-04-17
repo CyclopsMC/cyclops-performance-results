@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776192861070,
+  "lastUpdate": 1776437551168,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -2231,6 +2231,130 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: redstoneioclock_remove_size_10",
             "value": 45.88,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "f15c5a28d8c5e5990021a538e1ec5fb5f79e8517",
+          "message": "Bump mod version",
+          "timestamp": "2026-04-17T16:49:22+02:00",
+          "tree_id": "eddbd18e3abfb1b8cfc28ce6cc8fabb133207c64",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/f15c5a28d8c5e5990021a538e1ec5fb5f79e8517"
+        },
+        "date": 1776437550762,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: empty_remove_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_remove_size_10",
+            "value": 18.78,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_append_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_append_size_10",
+            "value": 6.8,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_appendparts_size_10",
+            "value": 0.56,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_appendparts_size_10",
+            "value": 23.83,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_size_10",
+            "value": 0.52,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_size_10",
+            "value": 0.83,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_size_10",
+            "value": 0.46,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: idle_size_10",
+            "value": 1.39,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: idle_size_10",
+            "value": 0.87,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_choice_size_10",
+            "value": 0.75,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_choice_size_10",
+            "value": 0.47,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_appendparts_size_10",
+            "value": 0.09,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_appendparts_size_10",
+            "value": 0.87,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_append_size_10",
+            "value": 0.43,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_append_size_10",
+            "value": 19.61,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_remove_size_10",
+            "value": 0.39,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_remove_size_10",
+            "value": 46.83,
             "unit": "tick time (ms)"
           }
         ]
