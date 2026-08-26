@@ -1,0 +1,112 @@
+window.BENCHMARK_DATA = {
+  "lastUpdate": 1787764074589,
+  "repoUrl": "https://github.com/CyclopsMC/IntegratedCrafting",
+  "entries": {
+    "Integrated Crafting Network Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@users.noreply.github.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5cb884c6eee184aab2e67b7037ae1615b152a983",
+          "message": "Add performance benchmarking setup (#217)\n\nMeasures what Integrated Crafting adds on top of an Integrated Dynamics\nnetwork: crafting interfaces, crafting job scheduling and execution, and\nthe network's recipe index. Mirrors the setup of Integrated Dynamics and\nIntegrated Tunnels, and reuses ID's measurement infrastructure.\n\nAdds eight benchmark presets on a shared cable grid: three idle presets\nthat isolate the standing cost of crafting interfaces and of crafting\nwriters that have nothing to do, three active presets that continuously\ncraft (flat, dependency-resolving, and with a 2.45x larger recipe index\nat constant crafting work), and two topology churn presets.\n\nAll presets are also exposed through /integratedcrafting generatecrafting\n<preset> <size> for manual profiling in a real world.\n\nEvery preset asserts after warmup that none of its parts is deactivated\nor in an aspect error state, and that every filled recipe slot is valid,\nso that a preset cannot silently degrade into an expensive no-op.\n\nStorage chests are deliberately only filled two thirds: a crafting\ninterface buffers its results until it can push them into network\nstorage and stops ticking its jobs entirely while that buffer is\nnon-empty, so full chests jam every interface after a single craft.\n\nWithout PERFORMANCE_BENCHMARK_ENABLED, all benchmark game tests succeed\nimmediately without generating anything.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DF81jeWnWNR3ECHzNd9mRh",
+          "timestamp": "2026-08-26T18:51:33+02:00",
+          "tree_id": "fdac07526165ea627091c6c6ba59f3b9cd41b263",
+          "url": "https://github.com/CyclopsMC/IntegratedCrafting/commit/5cb884c6eee184aab2e67b7037ae1615b152a983"
+        },
+        "date": 1787764074140,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: craft_nested_size_9",
+            "value": 3.42,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_nested_size_9",
+            "value": 0.34,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_remove_size_9",
+            "value": 0.06,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_remove_size_9",
+            "value": 45.38,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.27,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.39,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_append_size_9",
+            "value": 0.05,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_append_size_9",
+            "value": 0.79,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_satisfied_idle_size_9",
+            "value": 0.27,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_satisfied_idle_size_9",
+            "value": 0.77,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_recipe_index_size_9",
+            "value": 2.02,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_recipe_index_size_9",
+            "value": 0.52,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.14,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.36,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_simple_size_9",
+            "value": 1.53,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_simple_size_9",
+            "value": 0.39,
+            "unit": "tick time (ms)"
+          }
+        ]
+      }
+    ]
+  }
+}
