@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787764312210,
+  "lastUpdate": 1788289526984,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedCrafting",
   "entries": {
     "Integrated Crafting Network Benchmark": [
@@ -103,6 +103,110 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: interfaces_crafting_append_size_9",
             "value": 0.31,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "1f451cbc33f3d57d2663821e09196885ef97a53b",
+          "message": "Merge remote-tracking branch 'origin/master-1.21-lts' into master-26-lts",
+          "timestamp": "2026-09-01T20:41:35+02:00",
+          "tree_id": "007828bea40043e146fcc5c65d058319d521bc2d",
+          "url": "https://github.com/CyclopsMC/IntegratedCrafting/commit/1f451cbc33f3d57d2663821e09196885ef97a53b"
+        },
+        "date": 1788289526472,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.33,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.14,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_nested_size_9",
+            "value": 2.4,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_nested_size_9",
+            "value": 0.16,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_simple_size_9",
+            "value": 4.48,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_simple_size_9",
+            "value": 0.45,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.34,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.23,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_append_size_9",
+            "value": 0.18,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_append_size_9",
+            "value": 0.42,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_recipe_index_size_9",
+            "value": 4.16,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_recipe_index_size_9",
+            "value": 0.21,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_remove_size_9",
+            "value": 0.23,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_remove_size_9",
+            "value": 24.83,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_satisfied_idle_size_9",
+            "value": 0.32,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_satisfied_idle_size_9",
+            "value": 0.14,
             "unit": "tick time (ms)"
           }
         ]
