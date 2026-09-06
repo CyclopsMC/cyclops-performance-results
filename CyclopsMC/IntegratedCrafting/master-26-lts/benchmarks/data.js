@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788624520421,
+  "lastUpdate": 1788718096397,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedCrafting",
   "entries": {
     "Integrated Crafting Network Benchmark": [
@@ -311,6 +311,70 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: interfaces_crafting_idle_size_9",
             "value": 0.19,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@users.noreply.github.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "907b90228d08a17c9f14df18d89e35cc9f49b203",
+          "message": "Fix parallel crafting jobs all completing on a single produced output (26) (#230)\n\nThis could cause random crafting job failures in highly parallel jobs.",
+          "timestamp": "2026-09-06T20:05:46+02:00",
+          "tree_id": "f6220521e2dd99a15fcf5c1e3766be26e6d13f78",
+          "url": "https://github.com/CyclopsMC/IntegratedCrafting/commit/907b90228d08a17c9f14df18d89e35cc9f49b203"
+        },
+        "date": 1788718095848,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_append_size_9",
+            "value": 0.16,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_append_size_9",
+            "value": 1.68,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.19,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.15,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.26,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.23,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_remove_size_9",
+            "value": 0.23,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_remove_size_9",
+            "value": 8.05,
             "unit": "tick time (ms)"
           }
         ]
