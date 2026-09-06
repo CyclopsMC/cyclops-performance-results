@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788704406646,
+  "lastUpdate": 1788705024089,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedCrafting",
   "entries": {
     "Integrated Crafting Network Benchmark": [
@@ -623,6 +623,110 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: craft_simple_size_9",
             "value": 0.41,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "5471ceadabeb662bda3b98b7adcbb46d686f5d97",
+          "message": "Avoid a superscript that the game font does not carry\n\nThe advancement title used U+2074 for a superscript four. It renders, but not\nfrom the same place as the superscript two and three of the sibling\nadvancements: those live in the built-in glyph sheet, while U+2074 falls\nthrough to the unicode fallback font and comes out thinner and taller. The\nthree titles read as a set, so the odd one out was visible.\n\nThe title becomes \"Crafting to the Fourth\", which keeps the escalation but uses\nonly characters the built-in font carries. It was also the only entry in the\nfile written as a \\u escape rather than as literal UTF-8, so that is gone too.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Bn8brBLvFiJsfnBHpwf8ZN",
+          "timestamp": "2026-09-06T14:27:22Z",
+          "tree_id": "7d9145baa5563fec232229ee5c1e25eb89e930da",
+          "url": "https://github.com/CyclopsMC/IntegratedCrafting/commit/5471ceadabeb662bda3b98b7adcbb46d686f5d97"
+        },
+        "date": 1788705023526,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: craft_nested_size_9",
+            "value": 3.93,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_nested_size_9",
+            "value": 0.38,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_remove_size_9",
+            "value": 0.07,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_remove_size_9",
+            "value": 47.43,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.13,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.39,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_append_size_9",
+            "value": 0.05,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_append_size_9",
+            "value": 0.6,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_satisfied_idle_size_9",
+            "value": 0.38,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_satisfied_idle_size_9",
+            "value": 0.42,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_recipe_index_size_9",
+            "value": 1.53,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_recipe_index_size_9",
+            "value": 0.44,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.16,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.37,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_simple_size_9",
+            "value": 1.2,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_simple_size_9",
+            "value": 0.4,
             "unit": "tick time (ms)"
           }
         ]
