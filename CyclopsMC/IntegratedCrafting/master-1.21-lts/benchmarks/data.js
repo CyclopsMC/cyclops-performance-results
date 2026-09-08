@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788888800153,
+  "lastUpdate": 1788890968767,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedCrafting",
   "entries": {
     "Integrated Crafting Network Benchmark": [
@@ -1559,6 +1559,110 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: craft_simple_size_9",
             "value": 0.47,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@users.noreply.github.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "441eaa527eda0e471ff355d65d625389b253f269",
+          "message": "Update Common Capabilities to 2.11.5-373 (#235)\n\nThis carries the fix for extraction from slots larger than a vanilla stack,\nwhich previously pulled a single item per item handler call.",
+          "timestamp": "2026-09-08T20:07:02+02:00",
+          "tree_id": "de8870ded048e50e5ca99eec525075cdb072c6ca",
+          "url": "https://github.com/CyclopsMC/IntegratedCrafting/commit/441eaa527eda0e471ff355d65d625389b253f269"
+        },
+        "date": 1788890968145,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: craft_nested_size_9",
+            "value": 3.64,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_nested_size_9",
+            "value": 0.33,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_remove_size_9",
+            "value": 0.05,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_remove_size_9",
+            "value": 16.08,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.14,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.52,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_append_size_9",
+            "value": 0.11,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_append_size_9",
+            "value": 0.88,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_satisfied_idle_size_9",
+            "value": 0.26,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_satisfied_idle_size_9",
+            "value": 0.47,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_recipe_index_size_9",
+            "value": 0.97,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_recipe_index_size_9",
+            "value": 0.49,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.08,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.44,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: craft_simple_size_9",
+            "value": 0.82,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: craft_simple_size_9",
+            "value": 0.48,
             "unit": "tick time (ms)"
           }
         ]
