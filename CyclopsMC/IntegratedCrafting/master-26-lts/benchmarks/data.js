@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789043014753,
+  "lastUpdate": 1789153306141,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedCrafting",
   "entries": {
     "Integrated Crafting Network Benchmark": [
@@ -503,6 +503,70 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: interfaces_crafting_idle_recipes_size_9",
             "value": 0.16,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "79c7a4fe340bd7ee5dd93a1896944f1abb93b34e",
+          "message": "Merge remote-tracking branch 'origin/master-1.21-lts' into master-26-lts",
+          "timestamp": "2026-09-11T20:59:28+02:00",
+          "tree_id": "86d4b1e4a4fcf00f69cdaebdd13858c80aa8fad4",
+          "url": "https://github.com/CyclopsMC/IntegratedCrafting/commit/79c7a4fe340bd7ee5dd93a1896944f1abb93b34e"
+        },
+        "date": 1789153305506,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 0.67,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_recipes_size_9",
+            "value": 2.82,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_remove_size_9",
+            "value": 0.18,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_remove_size_9",
+            "value": 19.06,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_append_size_9",
+            "value": 0.24,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_append_size_9",
+            "value": 0.59,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.56,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_crafting_idle_size_9",
+            "value": 0.49,
             "unit": "tick time (ms)"
           }
         ]
