@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789904951584,
+  "lastUpdate": 1789906319495,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedTunnels",
   "entries": {
     "Integrated Tunnels Network Benchmark": [
@@ -387,6 +387,200 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: interfaces_fluid_idle_size_9",
             "value": 0.85,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "8e71e29df2ba01f9d5320fc7131b708537d44f1a",
+          "message": "Also test the player simulator shooting a charged crossbow\n\nThe existing crossbow tests match the crossbow on its data, which is what\nthe click aspects do by default. A loaded crossbow carries the projectile\nit holds in its data, so it no longer matches the crossbow that is being\nclicked with, and is charged once without ever being shot.\n\nAdds a test that matches without data, so the crossbow keeps being clicked\nwith after it has been loaded, which shoots it. It checks that several\narrows are shot, and that every arrow that leaves the network ends up\neither in the crossbow or in the world.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01M33ptG2Reko7AGmxBjZQYj",
+          "timestamp": "2026-09-20T12:06:34Z",
+          "tree_id": "9e1b0d9cd5347b121256b89aa7e4050ae89977dc",
+          "url": "https://github.com/CyclopsMC/IntegratedTunnels/commit/8e71e29df2ba01f9d5320fc7131b708537d44f1a"
+        },
+        "date": 1789906318867,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: interfaces_item_remove_size_9",
+            "value": 0.01,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_remove_size_9",
+            "value": 7.65,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: player_simulator_bow_deep_size_9",
+            "value": 1.79,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: player_simulator_bow_deep_size_9",
+            "value": 3.82,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_idle_deep_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_idle_deep_size_9",
+            "value": 0.34,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_append_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_append_size_9",
+            "value": 0.46,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: world_entityitem_churn_size_9",
+            "value": 6.73,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: world_entityitem_churn_size_9",
+            "value": 0.32,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: player_simulator_size_9",
+            "value": 0.32,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: player_simulator_size_9",
+            "value": 1.76,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_index_query_size_9",
+            "value": 46.94,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_index_query_size_9",
+            "value": 1.88,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_transfer_size_9",
+            "value": 110.42,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_transfer_size_9",
+            "value": 1.86,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: world_block_churn_size_9",
+            "value": 4,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: world_block_churn_size_9",
+            "value": 1.34,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_transfer_predicate_size_9",
+            "value": 106.13,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_transfer_predicate_size_9",
+            "value": 3.2,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: energy_transfer_size_9",
+            "value": 10.53,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: energy_transfer_size_9",
+            "value": 1.88,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_idle_size_9",
+            "value": 0.02,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_idle_size_9",
+            "value": 1.12,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_filtering_interfaces_size_9",
+            "value": 113.89,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_filtering_interfaces_size_9",
+            "value": 1.86,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: player_simulator_bow_size_9",
+            "value": 0.65,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: player_simulator_bow_size_9",
+            "value": 4.7,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_energy_idle_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_energy_idle_size_9",
+            "value": 1.39,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: fluids_transfer_size_9",
+            "value": 9.79,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: fluids_transfer_size_9",
+            "value": 1.74,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_fluid_idle_size_9",
+            "value": 0.01,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_fluid_idle_size_9",
+            "value": 1.12,
             "unit": "tick time (ms)"
           }
         ]
