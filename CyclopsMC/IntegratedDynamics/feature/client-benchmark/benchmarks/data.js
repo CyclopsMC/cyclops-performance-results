@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790506079744,
+  "lastUpdate": 1790506360507,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -214,6 +214,62 @@ window.BENCHMARK_DATA = {
             "name": "SERVER LOAD: empty_size_10",
             "value": 2.94,
             "unit": "tick time (ms)"
+          }
+        ]
+      }
+    ],
+    "Integrated Dynamics Client Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "599f6857ba34097b40a71725f9157b4b1efdca21",
+          "message": "Add client-side rendering benchmark to CI\n\nAdds a Client Benchmark job to the performance workflow, which uses\nclientdevbridge to run a headless dev client, generates fixed scenes,\nand measures the time per frame of rendering (total and block entities)\nwith the vanilla client profiler. Results are tracked with the same\nbenchmark action and results repository as the server benchmarks, and\nscreenshots of the scenes are uploaded as artifact.\n\nThis also adds a displaypanels preset to the generatenetwork command,\nfor measuring the rendering of part overlays.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01UnGZfpzDoeTQMikpdAjzZW",
+          "timestamp": "2026-09-27T10:37:49Z",
+          "tree_id": "e8507dfe1c2f2b0d1f11a299a512bc6ee1d24539",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/599f6857ba34097b40a71725f9157b4b1efdca21"
+        },
+        "date": 1790506359898,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.709,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.128,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 168.938,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 5.111,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 35.084,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.752,
+            "unit": "frame time (ms)"
           }
         ]
       }
