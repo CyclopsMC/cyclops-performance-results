@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790608644296,
+  "lastUpdate": 1790608934914,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -662,6 +662,62 @@ window.BENCHMARK_DATA = {
             "name": "SERVER LOAD: empty_size_10",
             "value": 2.31,
             "unit": "tick time (ms)"
+          }
+        ]
+      }
+    ],
+    "Integrated Dynamics Client Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "ad53111b2a19026ccf1b8302be82c06961772696",
+          "message": "Rework variable clipboard sharing after review\n\nAdd a Parse Any operator that decodes a copied value from a string, with\nthe same materialization checks and size cap as pasting, since strings\ncan be built inside a network.\n\nReplace the Paste button of the Clipboard element with a text field that\nvalidates what is pasted into it, and shows the value or the error below.\n\nStore the Minecraft and mod versions in the version entry. These are only\ninformative, so values are no longer rejected based on them.\n\nReplace the text copy buttons of the Materializer with icon buttons next\nto the gui, where this mod puts the buttons of parts as well.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_015XjdQNSd2L5BL8JGGLTFEM",
+          "timestamp": "2026-09-28T15:08:16Z",
+          "tree_id": "b7b034e1c1ba90d570e5b5c7e836395a148916e5",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/ad53111b2a19026ccf1b8302be82c06961772696"
+        },
+        "date": 1790608934319,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.548,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.109,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 33.927,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.122,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 27.868,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.653,
+            "unit": "frame time (ms)"
           }
         ]
       }
