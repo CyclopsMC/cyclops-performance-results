@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789907858416,
+  "lastUpdate": 1791029621492,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedTunnels",
   "entries": {
     "Integrated Tunnels Network Benchmark": [
@@ -2475,6 +2475,200 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: interfaces_fluid_idle_size_9",
             "value": 1.11,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "dd9ade64e31b0f56c2dc672541d0e9583119670f",
+          "message": "Bump mod version",
+          "timestamp": "2026-10-03T14:03:07+02:00",
+          "tree_id": "7ca7a5fcd8d890970e3a864486db335c6829af4d",
+          "url": "https://github.com/CyclopsMC/IntegratedTunnels/commit/dd9ade64e31b0f56c2dc672541d0e9583119670f"
+        },
+        "date": 1791029621032,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: interfaces_item_remove_size_9",
+            "value": 0.02,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_remove_size_9",
+            "value": 9.79,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: player_simulator_bow_deep_size_9",
+            "value": 1.57,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: player_simulator_bow_deep_size_9",
+            "value": 4,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_idle_deep_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_idle_deep_size_9",
+            "value": 0.37,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_append_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_append_size_9",
+            "value": 0.4,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: world_entityitem_churn_size_9",
+            "value": 7.77,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: world_entityitem_churn_size_9",
+            "value": 0.34,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: player_simulator_size_9",
+            "value": 0.3,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: player_simulator_size_9",
+            "value": 1.53,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_index_query_size_9",
+            "value": 51.64,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_index_query_size_9",
+            "value": 1.84,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_transfer_size_9",
+            "value": 123.05,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_transfer_size_9",
+            "value": 2.39,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: world_block_churn_size_9",
+            "value": 5.78,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: world_block_churn_size_9",
+            "value": 1.51,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_transfer_predicate_size_9",
+            "value": 116.15,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_transfer_predicate_size_9",
+            "value": 2.27,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: energy_transfer_size_9",
+            "value": 16.72,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: energy_transfer_size_9",
+            "value": 1.39,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_idle_size_9",
+            "value": 0.03,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_idle_size_9",
+            "value": 1.28,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: items_filtering_interfaces_size_9",
+            "value": 124.37,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: items_filtering_interfaces_size_9",
+            "value": 2.12,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: player_simulator_bow_size_9",
+            "value": 0.69,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: player_simulator_bow_size_9",
+            "value": 4.35,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_energy_idle_size_9",
+            "value": 0.05,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_energy_idle_size_9",
+            "value": 1.59,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: fluids_transfer_size_9",
+            "value": 11.18,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: fluids_transfer_size_9",
+            "value": 1.47,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_fluid_idle_size_9",
+            "value": 0.04,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_fluid_idle_size_9",
+            "value": 1.27,
             "unit": "tick time (ms)"
           }
         ]
