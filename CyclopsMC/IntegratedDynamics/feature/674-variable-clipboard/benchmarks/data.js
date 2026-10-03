@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791027413913,
+  "lastUpdate": 1791027846277,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -1761,6 +1761,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.683,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "4dfb6c1b1f39a091440d6ee4e6b4e7f0d8809aa5",
+          "message": "Give the encode compressed operator a wider render pattern\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_015XjdQNSd2L5BL8JGGLTFEM",
+          "timestamp": "2026-10-03T11:31:59Z",
+          "tree_id": "d675fd7a9254193987a0df885c1b3134d562934a",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/4dfb6c1b1f39a091440d6ee4e6b4e7f0d8809aa5"
+        },
+        "date": 1791027845736,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 15.805,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.091,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 33.43,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.256,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.258,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.657,
             "unit": "frame time (ms)"
           }
         ]
