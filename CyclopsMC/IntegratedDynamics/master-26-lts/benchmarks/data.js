@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791031895710,
+  "lastUpdate": 1791032115823,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -4966,6 +4966,62 @@ window.BENCHMARK_DATA = {
             "name": "SERVER LOAD: empty_size_10",
             "value": 10.75,
             "unit": "tick time (ms)"
+          }
+        ]
+      }
+    ],
+    "Integrated Dynamics Client Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "68fdb4de80cd7b166486696023a3630b8ab0e1eb",
+          "message": "Bump mod version",
+          "timestamp": "2026-10-03T14:46:29+02:00",
+          "tree_id": "b4cfe1dcd0ced77ea4090cbcc5472cd4d4bf1cf2",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/68fdb4de80cd7b166486696023a3630b8ab0e1eb"
+        },
+        "date": 1791032115214,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.092,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.011,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 32.49,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 0.654,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 57.815,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 2.517,
+            "unit": "frame time (ms)"
           }
         ]
       }
