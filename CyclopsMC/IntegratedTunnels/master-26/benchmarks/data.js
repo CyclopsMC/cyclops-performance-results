@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791030043495,
+  "lastUpdate": 1791615094128,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedTunnels",
   "entries": {
     "Integrated Tunnels Network Benchmark": [
@@ -1289,6 +1289,90 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: interfaces_fluid_idle_size_9",
             "value": 0.41,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "d69c66dcc21a92b93b400ca6e40a7f46cb921f0f",
+          "message": "Merge remote-tracking branch 'origin/master-26-lts' into master-26",
+          "timestamp": "2026-10-10T08:48:49+02:00",
+          "tree_id": "e758aad34135d0e739a12e63bee996cfceb63323",
+          "url": "https://github.com/CyclopsMC/IntegratedTunnels/commit/d69c66dcc21a92b93b400ca6e40a7f46cb921f0f"
+        },
+        "date": 1791615093708,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: interfaces_fluid_idle_size_9",
+            "value": 0.02,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_fluid_idle_size_9",
+            "value": 0.77,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_idle_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_idle_size_9",
+            "value": 0.27,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_remove_size_9",
+            "value": 0.02,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_remove_size_9",
+            "value": 7.1,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_append_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_append_size_9",
+            "value": 0.37,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_energy_idle_size_9",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_energy_idle_size_9",
+            "value": 0.53,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: interfaces_item_idle_deep_size_9",
+            "value": 0.01,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: interfaces_item_idle_deep_size_9",
+            "value": 0.55,
             "unit": "tick time (ms)"
           }
         ]
