@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791033288153,
+  "lastUpdate": 1791728585237,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -5199,6 +5199,240 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: redstoneioclock_appendparts_size_10",
             "value": 15,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "rubensworks@gmail.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "distinct": true,
+          "id": "cbf7e567a7dd41eefe600d249ed8fd26938c76b6",
+          "message": "Bump mod version",
+          "timestamp": "2026-10-11T16:20:26+02:00",
+          "tree_id": "0eb8b77403801157ad9043c29104e67cf6d6cb36",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/cbf7e567a7dd41eefe600d249ed8fd26938c76b6"
+        },
+        "date": 1791728584819,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: idle_size_10",
+            "value": 0.55,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: idle_size_10",
+            "value": 0.19,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_appendparts_size_10",
+            "value": 0.06,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_appendparts_size_10",
+            "value": 12.75,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_size_32",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_size_32",
+            "value": 0.06,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_choice_size_10",
+            "value": 0.74,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_choice_size_10",
+            "value": 0.09,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_appendparts_size_10",
+            "value": 0.3,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_appendparts_size_10",
+            "value": 6.53,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_size_5000",
+            "value": 0.002233,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_size_5000",
+            "value": 0.001454,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_size_5000",
+            "value": 0.000635,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_nonempty_first_size_5000",
+            "value": 0.000135,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_nonempty_all_size_5000",
+            "value": 0.007351,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_single_item_size_5000",
+            "value": 0.000842,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_single_item_size_5000",
+            "value": 0.000741,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_few_items_size_5000",
+            "value": 0.000555,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_few_items_size_5000",
+            "value": 0.000576,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_heavy_components_size_5000",
+            "value": 0.001886,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_heavy_components_size_5000",
+            "value": 0.001439,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_plain_size_5000",
+            "value": 0.00077,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_plain_size_5000",
+            "value": 0.00061,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_plain_size_5000",
+            "value": 0.000329,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_mixed_size_5000",
+            "value": 0.000862,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_mixed_size_5000",
+            "value": 0.000575,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_mixed_size_5000",
+            "value": 0.00043,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_single_item_size_5000",
+            "value": 0.327302,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_append_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_append_size_10",
+            "value": 4.07,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: control_size_0",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: control_size_0",
+            "value": 0.02,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_append_size_10",
+            "value": 0.21,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_append_size_10",
+            "value": 7.97,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_remove_size_10",
+            "value": 0.2,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_remove_size_10",
+            "value": 8.06,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_remove_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_remove_size_10",
+            "value": 3.38,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_size_10",
+            "value": 0.01,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_size_10",
+            "value": 0.02,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_size_10",
+            "value": 0.41,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_size_10",
+            "value": 0.03,
             "unit": "tick time (ms)"
           }
         ]
