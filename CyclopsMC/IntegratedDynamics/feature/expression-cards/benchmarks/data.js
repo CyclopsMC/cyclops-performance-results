@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792178825390,
+  "lastUpdate": 1792179214942,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -523,6 +523,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.725,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "9e22f9ce4fce4e03a819dbac9443e5a359cec1c0",
+          "message": "Improve readability and guidance of the expression editor\n\n- Draw chips with short operator names at the largest scale that fits,\n  and mark unfilled nested operators with a badge.\n- Show what to do next in the expression panel, depending on the\n  selection and the state of the expression, instead of small hints\n  in the config area and long slot tooltips.\n- Open a nested operator right after picking it.\n- Let selected parameters cycle through value types.\n- Make the expression panel collapsible, like the recipe book, so the\n  Logic Programmer keeps its old width for players who don't need it.\n- Escape and clicking the empty config area cancel a selection instead\n  of closing the gui.\n- Outline chips whose nested operators contain a type error, and name\n  the operator in the error status.\n- Draw the breadcrumb as tabs, allow empty string values, and use\n  readable colors for the type signature.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-16T19:22:47Z",
+          "tree_id": "b4b48fe9fbd813d745c0297bce445eafdcf1f128",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/9e22f9ce4fce4e03a819dbac9443e5a359cec1c0"
+        },
+        "date": 1792179214048,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 12.829,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.071,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 27.648,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.149,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 22.05,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.559,
             "unit": "frame time (ms)"
           }
         ]
