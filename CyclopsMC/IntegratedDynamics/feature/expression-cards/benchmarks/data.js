@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792179214942,
+  "lastUpdate": 1792182759745,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -467,6 +467,240 @@ window.BENCHMARK_DATA = {
           {
             "name": "SERVER LOAD: empty_size_10",
             "value": 1.7,
+            "unit": "tick time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "f53b4cfa7f24c0c76df8f757b3298dc5be96d25e",
+          "message": "Test partial application as an inline operator value in map\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-16T20:27:20Z",
+          "tree_id": "c2ca17edb353be18b27c50c38e125d4035c7aacc",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/f53b4cfa7f24c0c76df8f757b3298dc5be96d25e"
+        },
+        "date": 1792182759077,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "NETWORK LOAD: control_size_0",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: control_size_0",
+            "value": 0.29,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_remove_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_remove_size_10",
+            "value": 10.33,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_appendparts_size_10",
+            "value": 0.78,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_appendparts_size_10",
+            "value": 21.94,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_size_32",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_size_32",
+            "value": 0.21,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_remove_size_10",
+            "value": 0.52,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_remove_size_10",
+            "value": 20.2,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_size_10",
+            "value": 0.95,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_size_10",
+            "value": 0.21,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_appendparts_size_10",
+            "value": 0.13,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_appendparts_size_10",
+            "value": 21.19,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_append_size_10",
+            "value": 0.41,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_append_size_10",
+            "value": 18.1,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: redstoneioclock_choice_size_10",
+            "value": 0.66,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: redstoneioclock_choice_size_10",
+            "value": 3.25,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_append_size_10",
+            "value": 0.01,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_append_size_10",
+            "value": 7.45,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: idle_size_10",
+            "value": 0.91,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: idle_size_10",
+            "value": 3.2,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_mixed_size_5000",
+            "value": 0.001262,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_size_5000",
+            "value": 0.000764,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_size_5000",
+            "value": 0.001278,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_plain_size_5000",
+            "value": 0.000907,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_nonempty_all_size_5000",
+            "value": 0.015853,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_size_5000",
+            "value": 0.001128,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_single_item_size_5000",
+            "value": 0.597473,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_mixed_size_5000",
+            "value": 0.000725,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_plain_size_5000",
+            "value": 0.000402,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_item_mixed_size_5000",
+            "value": 0.000908,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_nonempty_first_size_5000",
+            "value": 0.000184,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_few_items_size_5000",
+            "value": 0.001021,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_single_item_size_5000",
+            "value": 0.000864,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_single_item_size_5000",
+            "value": 0.001471,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_plain_size_5000",
+            "value": 0.000702,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_heavy_components_size_5000",
+            "value": 0.002097,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_lookup_exact_heavy_components_size_5000",
+            "value": 0.001359,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "INDEX LOAD: index_modification_few_items_size_5000",
+            "value": 0.000859,
+            "unit": "operation time (ms)"
+          },
+          {
+            "name": "NETWORK LOAD: empty_size_10",
+            "value": 0,
+            "unit": "tick time (ms)"
+          },
+          {
+            "name": "SERVER LOAD: empty_size_10",
+            "value": 2.9,
             "unit": "tick time (ms)"
           }
         ]
