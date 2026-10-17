@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792221028525,
+  "lastUpdate": 1792221341993,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -1963,6 +1963,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.698,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "c1e7b1785810aaf59360c2b732fa1430dcbe2b05",
+          "message": "Fill the expression panel and draw its text at full size\n\nThe dark box of the expression now reaches the bottom of the panel, with\na footer that shows the type, or the first type error instead, so there\nis no empty area left for messages that may come. Hovering an error shows\nits full message. The expression and the footer are drawn at full size,\nsince text scaled to 75% gets uneven strokes at most GUI scales. The\nempty slot count and depth note are dropped, empty slots already show\nas ? in the expression.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T06:52:50Z",
+          "tree_id": "eb8e150d9da52d3fff02ec52ba3a6f3940d06d97",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/c1e7b1785810aaf59360c2b732fa1430dcbe2b05"
+        },
+        "date": 1792221341497,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.459,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.112,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 35.781,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.702,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.642,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.705,
             "unit": "frame time (ms)"
           }
         ]
