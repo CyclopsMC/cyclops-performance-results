@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792217368650,
+  "lastUpdate": 1792217622044,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -1675,6 +1675,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.653,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "05122db423aef7c07aa1c3724440c1528d5c185f",
+          "message": "Simplify the expression panel and color its type\n\nDrop the hint below the status and the \"Ready to write\" line, which the\ncheck mark next to the operator name already shows. Errors of an operator\nas a whole, which have no slot to hover, now show their message as the\nstatus. The type is drawn below the expression on its dark background, in\nthe colors of the value types as in card tooltips. The button that adds a\nparameter is a regular button like the others in the Logic Programmer.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T06:04:52Z",
+          "tree_id": "a6e669f94e2445c04b76c4f01b34128ba81bbfbd",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/05122db423aef7c07aa1c3724440c1528d5c185f"
+        },
+        "date": 1792217621782,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 13.409,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.096,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 27.439,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.13,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 22.67,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.698,
             "unit": "frame time (ms)"
           }
         ]
