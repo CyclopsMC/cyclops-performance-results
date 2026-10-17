@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792212898260,
+  "lastUpdate": 1792213144343,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -1387,6 +1387,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.671,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "b28ccde7453d648435e3a971a4aa9a855dab5dcf",
+          "message": "Name operators in expressions as Integrated Scripting does\n\nPrint operators by their scoped interact name, such as length or nbt,\nand fall back to their global interact name, such as stringLength,\nwhen the scoped name is shared by operators that the type of the first\nargument does not tell apart. Only + - * / % == != < <= > >= && || and\n! keep a symbol, so names no longer contain characters such as\nNBT{}.get_integer or =NBT=, and every printed name leads back to one\noperator. Chips, breadcrumb tabs and status messages use the same names.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T04:49:58Z",
+          "tree_id": "ec3ae234f453f1dff4f61f53d507a964ded0d29b",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/b28ccde7453d648435e3a971a4aa9a855dab5dcf"
+        },
+        "date": 1792213144082,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 16.032,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.087,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 33.856,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.372,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 27.694,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.653,
             "unit": "frame time (ms)"
           }
         ]
