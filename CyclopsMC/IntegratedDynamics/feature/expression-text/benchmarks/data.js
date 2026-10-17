@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792218358943,
+  "lastUpdate": 1792218580207,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -523,6 +523,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.809,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "6a96454b1e2c8a1b7d8a7bb11a3e2e1fcae00f61",
+          "message": "Merge feature/expression-cards and use regular buttons for text editing\n\nBrings in the simplified expression panel. Edit, Copy, Undo, Apply and\nCancel are now regular buttons in a row at the bottom of the panel, like\nthe other buttons of the Logic Programmer, instead of drawn boxes in the\ntitle. The hint below the text box is gone with the other hints, and the\ntype of the typed text is shown in the colors of its types.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T06:21:05Z",
+          "tree_id": "5ad0ee90651c3455d7c502f3276377b8bfa41af2",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/6a96454b1e2c8a1b7d8a7bb11a3e2e1fcae00f61"
+        },
+        "date": 1792218579805,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 10.527,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.053,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 22.649,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.202,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 18.446,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.487,
             "unit": "frame time (ms)"
           }
         ]
