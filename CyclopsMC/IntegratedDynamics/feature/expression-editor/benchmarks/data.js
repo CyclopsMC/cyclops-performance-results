@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792232008279,
+  "lastUpdate": 1792232272225,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -523,6 +523,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.672,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "f4c2bc0198485641f63a2209169ed579fa10ebb9",
+          "message": "Use icon buttons for undo, redo and copy, and drop the hover hint\n\nThe font has no undo, redo or copy symbols, so the icons are drawn\npixel by pixel, in the same colors and with the same shadow as the text\nof text buttons. Copying briefly shows a check mark instead of the\n\"Copied\" text. The hint when hovering the expression is removed, as\nthe button tooltips and the book already explain the editor.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T10:09:00Z",
+          "tree_id": "b540021cd0d0c1fd2bb7d23a7423a83330ddba38",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/f4c2bc0198485641f63a2209169ed579fa10ebb9"
+        },
+        "date": 1792232271606,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.088,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.089,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 35.285,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.673,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.205,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.688,
             "unit": "frame time (ms)"
           }
         ]
