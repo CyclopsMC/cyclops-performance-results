@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792230380202,
+  "lastUpdate": 1792230642605,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -234,6 +234,62 @@ window.BENCHMARK_DATA = {
             "name": "SERVER LOAD: empty_size_10",
             "value": 2.61,
             "unit": "tick time (ms)"
+          }
+        ]
+      }
+    ],
+    "Integrated Dynamics Client Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "94d840d7630e88d45f9542ee79a4c093221fe7d9",
+          "message": "Edit expressions in place instead of in a separate text mode\n\nThe text of the expression in the panel can now be edited directly,\ninstead of switching to a separate text box with an Edit button. It keeps\nthe colors of the read-only view, and clicking a part places the caret\nand opens that operator in the slots. Typing makes a draft: Enter applies\nit, Escape reverts it, and slots wait until then. Applying keeps the open\noperator if it is still there.\n\nUndo and Redo go back and forth through all changes to the expression,\nfrom slots, parameters and text alike, and are reset when another\nexpression is opened.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T09:38:01Z",
+          "tree_id": "fdf2513330da4dbb4c3cd91aa52086640b09c247",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/94d840d7630e88d45f9542ee79a4c093221fe7d9"
+        },
+        "date": 1792230642336,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.02,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.109,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 34.458,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.17,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.377,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.672,
+            "unit": "frame time (ms)"
           }
         ]
       }
