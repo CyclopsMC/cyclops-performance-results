@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792243086378,
+  "lastUpdate": 1792243353228,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -1909,6 +1909,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.711,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "3c500c678dd6b6b53b505f88c74c68c6cc245496",
+          "message": "Keep the colors of the expression text while typing\n\nThe whole text turned plain as soon as a character was typed, which hid\nthe open operator and the empty slots. The text before and after what\nwas typed now keeps its colors. Errors are left out while typing, as the\nfooter then shows the errors of the draft.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T13:13:26Z",
+          "tree_id": "b83e4074bdaee4ab5e36f01fbdb05363a810f71f",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/3c500c678dd6b6b53b505f88c74c68c6cc245496"
+        },
+        "date": 1792243352841,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.374,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.179,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 37.644,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.424,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 30.097,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.981,
             "unit": "frame time (ms)"
           }
         ]
