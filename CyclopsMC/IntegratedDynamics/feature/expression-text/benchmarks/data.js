@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792216534028,
+  "lastUpdate": 1792216837034,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -234,6 +234,62 @@ window.BENCHMARK_DATA = {
             "name": "SERVER LOAD: empty_size_10",
             "value": 3.53,
             "unit": "tick time (ms)"
+          }
+        ]
+      }
+    ],
+    "Integrated Dynamics Client Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "4afcde5405c2e99363d47ef3ab7cc2a9514c1f6b",
+          "message": "Let expressions in the Logic Programmer be edited as text\n\nThe expression panel gets Edit, Copy and Undo buttons. Edit turns the\nexpression into text in the format of Integrated Scripting, which is\nparsed and type checked on the client while typing. Applying sends the\nresulting tree to the server once, as a single set action that the\nserver validates, and makes the element of the new root operator active\nwhen it changed.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T05:43:28Z",
+          "tree_id": "0438849030026a835577cf11633b36107ff7bcb9",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/4afcde5405c2e99363d47ef3ab7cc2a9514c1f6b"
+        },
+        "date": 1792216836450,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 16.786,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.13,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 34.134,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.366,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 29.543,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.809,
+            "unit": "frame time (ms)"
           }
         ]
       }
