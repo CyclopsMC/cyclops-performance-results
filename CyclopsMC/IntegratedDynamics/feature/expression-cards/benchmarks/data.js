@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792246302462,
+  "lastUpdate": 1792246545993,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -3115,6 +3115,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.627,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "d3b01388e797ba9676bd3d4e8a69d37fca9e7d51",
+          "message": "Show the type of expression cards with their known reference types\n\nThe tooltip of an expression card inferred its type as if every\nreferenced card could be of any type, so a -> a + #5 showed\nInteger -> Any, while the Logic Programmer showed Integer -> Integer.\nThe card already stores the types of the cards it references, and the\ntooltip now uses them, like the expression line above it. The type that\nnetworks validate against stays as it was.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T14:06:46Z",
+          "tree_id": "9bf54333f0f165e26e42981a113afa1bf1ad2579",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/d3b01388e797ba9676bd3d4e8a69d37fca9e7d51"
+        },
+        "date": 1792246545459,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 12.644,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.061,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 28.088,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.125,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 22.784,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.538,
             "unit": "frame time (ms)"
           }
         ]
