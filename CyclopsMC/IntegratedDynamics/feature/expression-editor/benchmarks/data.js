@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792233127203,
+  "lastUpdate": 1792233383553,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -811,6 +811,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.688,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "71dc2eb9cb13755e216ee97e833b4b346ee53666",
+          "message": "Move the expression panel buttons right of its title\n\nWith icons, Undo, Redo and Copy fit right of the title, so the row of\nbuttons below the expression is removed and the expression gets that\nheight instead. Revert and Apply become a cross and a check there, with\ntooltips naming Esc and Enter. The add parameter button moves down a\npixel so its plus is in line with the Parameters label.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-17T10:28:49Z",
+          "tree_id": "4dc7fb5fa6a2c9710a6a18b3522f342db65a7fea",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/71dc2eb9cb13755e216ee97e833b4b346ee53666"
+        },
+        "date": 1792233382932,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 18.407,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.105,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 39.088,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.768,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 31.666,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.693,
             "unit": "frame time (ms)"
           }
         ]
