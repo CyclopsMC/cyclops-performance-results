@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792350599321,
+  "lastUpdate": 1792350858413,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -5131,6 +5131,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.595,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "e245594f5eebf5ee9a85a76acda6f7c0f3c7724e",
+          "message": "Align the expression syntax with Integrated Scripting\n\nSimple functions from Integrated Scripting can now be pasted as\nexpressions, with at most their parameter types added:\n\n- Parameters are declared with =>, which is also what is printed.\n  -> is still read.\n- item.size() can be written for size(item), as for the methods of\n  values in scripts. It is printed as a call.\n- A parameter that holds an operator can be called, where f(a) is\n  apply(f, a), up to apply3 for three inputs.\n- === and !== are read as == and !=, which already compare strictly.\n- Strings and labels can be in single quotes, also curly ones.\n- + joins strings when one of its inputs is a string, as concat. It is\n  only printed for concat when it would be read back as concat.\n\nAs + needs the types of both inputs while parsing, the parser now\ninfers the type of each node once, instead of type checking the first\nargument of each call again, so long chains such as a + b + c stay\nlinear.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-18T19:06:17Z",
+          "tree_id": "27f73cb7249939749a49f35ec1745178c32fe71d",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/e245594f5eebf5ee9a85a76acda6f7c0f3c7724e"
+        },
+        "date": 1792350857822,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 16.088,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.049,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 33.811,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.611,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 27.991,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.663,
             "unit": "frame time (ms)"
           }
         ]
