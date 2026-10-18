@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792357333592,
+  "lastUpdate": 1792357560231,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -5419,6 +5419,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.663,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "c98b7445801fe2b451b94208508ee982bfcfe940",
+          "message": "Make expressions work with value types of add-ons\n\nValue types of add-ons, such as the chemicals of Integrated Mekanism,\nonly partly worked in expressions:\n\n- Parameters could only have the types of Integrated Dynamics, from a\n  fixed list used by the type selector, the parser and the server.\n  Dropping a parameter in a chemical slot still made it a chemical,\n  which the selector showed as Any. Parameters can now have any\n  registered type that is not a category, plus Any and Number, and the\n  selector lists the types of add-ons after those of Integrated\n  Dynamics.\n- (c: integratedmekanism:chemicalstack) did not parse, as the colon of\n  the namespace ended the parameter list, while the printer writes the\n  types of add-ons this way. Types can also leave out their namespace\n  when no other type has that name, as in @chemicalstack{...}.\n- Typed values compared numbers by their tag type, so amount: 1000 was\n  an error for an amount that is stored as a long. Numbers with the\n  same value now count as kept, also in lists and arrays.\n- Slots only took items in Item slots. They now also take the items\n  that the element of the slot's type reads, such as a bucket in a\n  fluid slot, a block item in a block slot and a chemical tank in a\n  chemical slot. Such a constant is shown as that item, keeps a typed\n  amount when the item is put back, and the item's tooltip shows the\n  value when the item does not show it exactly.\n\nChecked in game with Integrated Mekanism 1.2.0 and Mekanism 10.7.16.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-18T20:57:19Z",
+          "tree_id": "662ceacab2b49d77ac174e7e9ed06d7dcde78995",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/c98b7445801fe2b451b94208508ee982bfcfe940"
+        },
+        "date": 1792357559739,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 11.729,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.054,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 24.933,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 0.768,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 20.983,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.445,
             "unit": "frame time (ms)"
           }
         ]
