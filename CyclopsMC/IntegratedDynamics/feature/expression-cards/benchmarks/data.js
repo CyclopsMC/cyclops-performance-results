@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792348008703,
+  "lastUpdate": 1792348260323,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -4843,6 +4843,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.556,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "100e82c8aa4bf5f2dd238880756cbece498a88b2",
+          "message": "Make typed values robust for sharing, and add list literals\n\n- Values written with their type, such as @itemstack{...}, are read\n  back and compared with what was typed. Values that fall back to a\n  default for what they cannot read, such as an unknown item, an empty\n  list for a malformed one, or an empty entity for a bad UUID, now give\n  an error that shows what they would be read as, instead of silently\n  becoming something else. Defaults that are added are allowed, and ids\n  can leave out the minecraft namespace.\n- Lists are written as [\"apple\", \"pear\"], [1, 2] or [[1], [2, 3]], with\n  the type the values share, or Any. Lists whose type their values do\n  not give, such as an empty list of Strings, keep the @list form.\n- NBT is written as the tag itself, as in commands: @nbt{a:1b}, and\n  @nbt() for no NBT, instead of the internal @nbt{v:{a:1b}}.\n- An item without a count is a single one.\n- Pasted text: other kinds of spaces, such as non-breaking ones, are\n  whitespace, curly quotes work as quotes, strings escape the section\n  sign and other characters that pasting drops, and text that is too\n  long gives an error instead of being cut off.\n- Unit tests for the round trips of all values that do not need the\n  game's registries, and integration tests for items, blocks, fluids,\n  ingredients, recipes and lists of them.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-18T17:44:22Z",
+          "tree_id": "09232d84d019ec1f503e72573d0cb8ec894ac9a4",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/100e82c8aa4bf5f2dd238880756cbece498a88b2"
+        },
+        "date": 1792348259704,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 13.352,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.088,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 28.06,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.238,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 22.784,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.595,
             "unit": "frame time (ms)"
           }
         ]
