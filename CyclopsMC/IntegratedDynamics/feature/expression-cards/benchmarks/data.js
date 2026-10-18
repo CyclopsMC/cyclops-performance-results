@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792332265318,
+  "lastUpdate": 1792332477783,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -3691,6 +3691,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.457,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "454bce9f9e27cffae3d98a917d098f1471ea6545",
+          "message": "Type expressions without an operator, and keep text on Escape\n\n- With no operator selected, the expression panel takes typed text.\n  Applying it selects the element of its root operator, where typing\n  continues. The set action now also works without an active operator\n  element.\n- Escape applies valid typed text instead of reverting it, so the\n  result no longer depends on whether it was pressed within the apply\n  delay. Text that does not parse is still reverted.\n- The arrows of the parameter type stay in place while cycling, as the\n  type name gets the width of the longest one.\n- Typed expressions with more than 1024 nodes get an error, instead of\n  being applied and then ignored.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-18T13:41:18Z",
+          "tree_id": "f6ceb48565c2021abdb639a0f066588087eed8fc",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/454bce9f9e27cffae3d98a917d098f1471ea6545"
+        },
+        "date": 1792332477416,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 8.965,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.039,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 19.266,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 0.758,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 16.154,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 1.479,
             "unit": "frame time (ms)"
           }
         ]
