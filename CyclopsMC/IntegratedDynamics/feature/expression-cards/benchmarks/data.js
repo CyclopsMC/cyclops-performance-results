@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792436205931,
+  "lastUpdate": 1792436472100,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -6283,6 +6283,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.794,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "bf69b93ae17a8e2f34304179d95cc62c692566f5",
+          "message": "List types after the colon of a parameter and after @\n\nWhile typing the type of a parameter, as in (x: int, or of a value, as\nin @ite, the list that shows methods after a point shows the types\nwhose name starts with what is typed, or whose name without the\nnamespace of an add-on does, with the name the game gives them next to\nit. Parameters only list the types they can have, and values no\ncategories. Inserting one replaces the typed name.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-19T18:51:42Z",
+          "tree_id": "cdf61ca7e25980ef55d6b4e2bd7c8be492f682ca",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/bf69b93ae17a8e2f34304179d95cc62c692566f5"
+        },
+        "date": 1792436471582,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 10.306,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.064,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 21.12,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.035,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 17.157,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.413,
             "unit": "frame time (ms)"
           }
         ]
