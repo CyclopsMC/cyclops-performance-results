@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792426099193,
+  "lastUpdate": 1792426355363,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -5707,6 +5707,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.445,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "4874110cb975dafbffdcc1c99dc024a58094e864",
+          "message": "Select words, move by word and match brackets in the expression text\n\nThe text of expressions used vanilla's text field behavior, where a word\nonly ends at a space, so item.isStackable() was one word, double-clicking\ndid nothing, and on macOS Cmd moved by word while Option moved by one\ncharacter.\n\n- Double-clicking selects a word, and a third click the whole text.\n- Ctrl with Left, Right, Backspace or Delete moves or deletes by word,\n  where words end at names, numbers, symbols and brackets.\n- On macOS, Option does that instead of Ctrl, and Cmd goes to the start\n  or end of the line, or with Up and Down of the text, as in its own\n  text fields.\n- The bracket next to the cursor and its match get a background,\n  skipping brackets in strings.\n\nThe word, bracket and key logic is in ExpressionTextNavigation, with\nunit tests for both platforms, as the dev client cannot hold modifier\nkeys.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-19T16:03:15Z",
+          "tree_id": "32c96fb7b55623b22d13fd3539c854557661bd67",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/4874110cb975dafbffdcc1c99dc024a58094e864"
+        },
+        "date": 1792426355061,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 13.368,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.074,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 27.345,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.146,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 23.134,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.597,
             "unit": "frame time (ms)"
           }
         ]
