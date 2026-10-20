@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792523846601,
+  "lastUpdate": 1792524123718,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -7147,6 +7147,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.624,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "39ef9048cf0cd5c4e4339cae8c68d01bce704eec",
+          "message": "Keep typed expressions as typed, also on the card\n\nTyping (x: integer) => x.add(3) showed x + 3 once the text lost focus,\nas the text was printed again from the tree. Typed text is now kept:\nin the editor, through undo and redo, and on the written card, which\nstores it next to the tree. It is only shown while it still reads as\nthe same tree, and otherwise the tree is printed as before, such as\nafter a label it uses changed. A slot or parameter edit that changes\nthe tree prints it from then on. Text in the usual form is not stored,\nand plain operators are still written as classic cards, without text.\n\nExpressionParser.tokenize records where each node was read, so typed\ntext maps each character to its node, as printed text does, for its\ncolors, highlights and opening the node under the cursor.\n\nA Format button between Redo and Copy writes the expression in its\nusual form, applying typed text first if it parses.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-20T19:12:40Z",
+          "tree_id": "2e8ec07fa22159d054703694c8d740e6910bb038",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/39ef9048cf0cd5c4e4339cae8c68d01bce704eec"
+        },
+        "date": 1792524123157,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 15.934,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.102,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 36.479,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.652,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.96,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.783,
             "unit": "frame time (ms)"
           }
         ]
