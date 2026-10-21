@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792566658648,
+  "lastUpdate": 1792566937664,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -7435,6 +7435,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.783,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "ba5e4c0c246c2cd69ae0050fa02311f7819b4527",
+          "message": "Show the signature of a call in a popup above the line\n\nWhile the cursor was inside the brackets of a call, the footer showed\nthe signature of that call instead of the type of the expression, so\nit was unclear which of the two it showed, and errors of the\nexpression were hidden meanwhile. The signature is now shown in a\npopup, as in Integrated Scripting's editor: above the line of the\ncursor, starting at the left of the text, below the first line as\nthere is no room above it, and not while the completion list is\nshown. The footer always shows the type or errors of the expression.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-21T07:06:03Z",
+          "tree_id": "8e8cd76171c2750b02a4bd9d3b0e49bde71a1bdb",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/ba5e4c0c246c2cd69ae0050fa02311f7819b4527"
+        },
+        "date": 1792566937340,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 16.323,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.109,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 34.191,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.072,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.258,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.693,
             "unit": "frame time (ms)"
           }
         ]
