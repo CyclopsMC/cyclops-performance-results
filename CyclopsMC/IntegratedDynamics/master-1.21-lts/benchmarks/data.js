@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792687777349,
+  "lastUpdate": 1792688044928,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -11710,6 +11710,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.566,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@users.noreply.github.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fd9ce2eb241a4980124d7cec0a69e22ad71b2905",
+          "message": "Fix server crash when removing a part while its gui is open (#1770)\n\nPart guis could keep querying the part state after the part was removed,\nthrowing PartStateException in broadcastChanges, which runs before\nstillValid in ServerPlayer#tick. The aspect settings gui also never\nbecame invalid, and threw again in removed().\n\ncanInteractWith now also requires the part to still exist, and the\naffected guis skip their server-side updates once the part is gone.\n\nCloses #1769\n\n\nClaude-Session: https://claude.ai/code/session_01KWA9jQMKMb1w4sZVUwnArm\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "timestamp": "2026-10-22T18:39:51+02:00",
+          "tree_id": "188ec21205f4969359aeee6b0eb34f472c152b5b",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/fd9ce2eb241a4980124d7cec0a69e22ad71b2905"
+        },
+        "date": 1792688044568,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 16.538,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.127,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 39.661,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.455,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 30,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.811,
             "unit": "frame time (ms)"
           }
         ]
