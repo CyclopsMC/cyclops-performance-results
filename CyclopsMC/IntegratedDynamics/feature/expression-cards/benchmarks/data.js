@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792777365342,
+  "lastUpdate": 1792777630437,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -7723,6 +7723,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.693,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "6df15fa68560ee944bcffbdd00b51d12a06f40a3",
+          "message": "Underline the whole part of a parse error, and drop its line and column\n\nParse errors only kept where they start, so only the first character\nof an unknown name was underlined. They now also keep where their token\nends, so an unknown operator, name, label or type, also with the\nnamespace of an add-on, is underlined as a whole, and the arrow of the\ntooltip points at its middle. A single symbol and the end of the text\nkeep a short mark.\n\nThe footer shows the message without the line and column, which the\nunderline and the tooltip already show. The book says how errors in\nthe text are marked and explained when hovered.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-23T17:36:18Z",
+          "tree_id": "f9dbd6955b6bc00adcd4817e537efd04b430ca80",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/6df15fa68560ee944bcffbdd00b51d12a06f40a3"
+        },
+        "date": 1792777629714,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 10.933,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.05,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 21.888,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 0.933,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 19.035,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.568,
             "unit": "frame time (ms)"
           }
         ]
