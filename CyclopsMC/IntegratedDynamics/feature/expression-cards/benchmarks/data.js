@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793463512345,
+  "lastUpdate": 1793463730416,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -8299,6 +8299,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.841,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "eeac0a11025ae7b4b713ad01c7b9c1feb7d4091c",
+          "message": "Write operators as values by their bare name\n\nA name that is not a parameter and is not called, as in flip(pipe) or\nmap(length, l), is now that operator as a value, where it had to be\nwritten in brackets, as in (pipe). Brackets are still read, and still\nneeded for symbols, as in (+). Parameters go first, and an operator\nvalue with the name of a parameter is printed with its global name.\nSlot chips keep the brackets, which tell an operator value apart from\na nested operator with the same name.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-10-31T16:11:35Z",
+          "tree_id": "7dbf4a2102f78b879cff7349d5059154200c5295",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/eeac0a11025ae7b4b713ad01c7b9c1feb7d4091c"
+        },
+        "date": 1793463730063,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 17.619,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.221,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 39.664,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.559,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.029,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.712,
             "unit": "frame time (ms)"
           }
         ]
