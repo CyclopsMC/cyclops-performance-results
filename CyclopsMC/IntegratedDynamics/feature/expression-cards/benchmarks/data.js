@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793549915981,
+  "lastUpdate": 1793550172622,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -8875,6 +8875,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.737,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "d8aa3dcca42c01cc100eaf7e45e3906828c29e0c",
+          "message": "Allow any number of parameters in expressions\n\nThe limit of 8 parameters was arbitrary: evaluation takes any number of\ninputs, and the depth and node limits already bound what a card can\nhold. It is gone from the card data, the parser and the editor.\n\nThe parameter chips now take at most 4 rows, which 8 of the longest\nnames fill, so the text keeps its room. When the parameters do not all\nfit, a chip after the last one that does tells how many more there are\nand lists them in its tooltip, as they can be used in the text, and the\nbutton to add one stays after it. The layout is in ParameterChipLayout.\n\nNew parameters past the default names are named p<n> with the first n\nthat no other parameter has, where they could repeat a name before.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-11-01T16:13:49Z",
+          "tree_id": "42e7d9ba53501392eae8b9f819a003071fcdd519",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/d8aa3dcca42c01cc100eaf7e45e3906828c29e0c"
+        },
+        "date": 1793550172108,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 19.513,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.09,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 38.116,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.379,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 28.885,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.796,
             "unit": "frame time (ms)"
           }
         ]
