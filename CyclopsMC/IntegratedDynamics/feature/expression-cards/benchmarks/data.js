@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793951134804,
+  "lastUpdate": 1793951389354,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -9451,6 +9451,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.579,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "1b9e3f31c3ac3ef5c9c7e1f31771fe0820e1923a",
+          "message": "Add a tutorial for expressions with advancements\n\nA new Expressions tutorial in the book leads through writing an expression\ncard, nesting an operator, and using an expression with a parameter as an\noperator, with an advancement for each step and rewards for the tutorial.\nExpression cards and operator values of expressions can now be matched by\nadvancement criteria, by their number of operators and parameters.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-11-06T07:41:32Z",
+          "tree_id": "7bf8a06d1d1a92ad802496b6decc4a5a7ef960be",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/1b9e3f31c3ac3ef5c9c7e1f31771fe0820e1923a"
+        },
+        "date": 1793951388873,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 12.933,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.102,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 30.164,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.127,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 22.835,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.616,
             "unit": "frame time (ms)"
           }
         ]
