@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794156153183,
+  "lastUpdate": 1794156329955,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -234,6 +234,62 @@ window.BENCHMARK_DATA = {
             "name": "SERVER LOAD: redstoneioclock_size_10",
             "value": 0.24,
             "unit": "tick time (ms)"
+          }
+        ]
+      }
+    ],
+    "Integrated Dynamics Client Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "69ea9cb64092dba2f6a20c4cc765c966ea8d5cef",
+          "message": "Remove @OnlyIn from the expression action packet\n\nNeoForge 26.1 no longer strips members annotated with it and shows a\nloading warning for every mod that uses it.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-11-08T16:39:09Z",
+          "tree_id": "5e65c23a61095bc2a858d7caa472ef47fbb2d629",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/69ea9cb64092dba2f6a20c4cc765c966ea8d5cef"
+        },
+        "date": 1794156329463,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 14.976,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.019,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 28.182,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 0.908,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 46.487,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 1.822,
+            "unit": "frame time (ms)"
           }
         ]
       }
