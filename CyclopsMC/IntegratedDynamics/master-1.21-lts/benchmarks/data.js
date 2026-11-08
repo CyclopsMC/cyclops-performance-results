@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794152930300,
+  "lastUpdate": 1794153148745,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -12574,6 +12574,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
             "value": 0.813,
+            "unit": "frame time (ms)"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rubensworks@users.noreply.github.com",
+            "name": "Ruben Taelman",
+            "username": "rubensworks"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fbfe035d2d0bca058b8f651ee49f16b5754efc7",
+          "message": "Add Expressions support to the Logic Programmer (#1766)\n\nThis allows constant values and multiple nested operators\nto be combined within a single variable card, without having\nto combine multiple variable cards.\n\nThese expressions can either be created through the existing\nLogic Programmer interface, or they can be written in a text-form\nfor easy exchange across worlds and players.",
+          "timestamp": "2026-11-08T16:40:42+01:00",
+          "tree_id": "f2dbf883b499d9f663bc0fae0de5373a1c006d34",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/2fbfe035d2d0bca058b8f651ee49f16b5754efc7"
+        },
+        "date": 1794153148362,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 20.302,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.22,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 43.047,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 1.364,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 34.625,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.889,
             "unit": "frame time (ms)"
           }
         ]
