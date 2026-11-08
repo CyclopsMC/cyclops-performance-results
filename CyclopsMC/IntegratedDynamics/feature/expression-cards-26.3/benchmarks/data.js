@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794164654555,
+  "lastUpdate": 1794164842243,
   "repoUrl": "https://github.com/CyclopsMC/IntegratedDynamics",
   "entries": {
     "Integrated Dynamics Network Benchmark": [
@@ -234,6 +234,62 @@ window.BENCHMARK_DATA = {
             "name": "INDEX LOAD: index_lookup_item_single_item_size_5000",
             "value": 0.481893,
             "unit": "operation time (ms)"
+          }
+        ]
+      }
+    ],
+    "Integrated Dynamics Client Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "committer": {
+            "email": "noreply@anthropic.com",
+            "name": "Claude",
+            "username": "claude"
+          },
+          "distinct": true,
+          "id": "d4c669e83db999b337423692ce53a9327d0e32fb",
+          "message": "Merge remote-tracking branch 'origin/master-26-lts' into master-26\n\nPorts the expressions of the Logic Programmer to Minecraft 26.3:\n- Keys and mouse buttons use the SDL codes of InputConstants instead of GLFW.\n  Undo and redo read the shortcut key, so they follow the keyboard layout, and\n  Ctrl, or Cmd on macOS, comes from the key event, as Minecraft#hasControlDown\n  no longer means Cmd on macOS.\n- The expression text field starts SDL text input when it gets focus, without\n  which no typed characters arrive.\n- Blocks without properties are written as their id alone in 26.3, so a typed\n  compound with only an id is kept when it is written as that id.\n- MinMaxBounds, the screen, the left and top of containers, advancement icons and\n  color names follow their 26.3 replacements.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01MHtucHo4Qy2pTfBMgeE54y",
+          "timestamp": "2026-11-08T18:34:43Z",
+          "tree_id": "0a90a72cd9ddf175e19b03364192b2a380c378d6",
+          "url": "https://github.com/CyclopsMC/IntegratedDynamics/commit/d4c669e83db999b337423692ce53a9327d0e32fb"
+        },
+        "date": 1794164841614,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "CLIENT FRAME: control_size_16",
+            "value": 16.871,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: control_size_16",
+            "value": 0.013,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: cables_size_16",
+            "value": 31.769,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: cables_size_16",
+            "value": 0.706,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT FRAME: displaypanels_size_12",
+            "value": 57.295,
+            "unit": "frame time (ms)"
+          },
+          {
+            "name": "CLIENT BLOCK ENTITIES: displaypanels_size_12",
+            "value": 0.801,
+            "unit": "frame time (ms)"
           }
         ]
       }
